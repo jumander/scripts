@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=efibootmgr -o 0001,0000
+ExecStart=/usr/local/bin/boot-ubuntu-first.sh
 RemainAfterExit=true
 User=root
 
