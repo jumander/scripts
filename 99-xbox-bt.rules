@@ -1,0 +1,3 @@
+# Run script when Xbox controller connects via Bluetooth
+KERNEL=="event*", SUBSYSTEM=="input", ATTRS{name}=="Xbox Wireless Controller", ACTION=="add", RUN+="/bin/bash -c '[ -f /tmp/gamepad-connected ] || /usr/bin/touch /tmp/gamepad-connected'"
+

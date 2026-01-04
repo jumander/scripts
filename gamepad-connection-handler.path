@@ -1,0 +1,8 @@
+[Unit]
+Description=Watch file for changes
+
+[Path]
+PathChanged=/tmp/gamepad-connected
+
+[Install]
+WantedBy=default.target
