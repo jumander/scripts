@@ -1,8 +1,5 @@
 #!/bin/bash
 
-gsettings set org.gnome.desktop.interface scaling-factor 1
-
-xrandr \
-  --output DP-4 --mode 2560x1440 --pos 0x0 --rate 144 --primary \
-  --output DP-2 --mode 1920x1080 --pos 2560x1080 --right-of DP-4 \
-  --output HDMI-0 --off
+gdctl set \
+  --logical-monitor --primary --monitor DP-3 --mode 2560x1440@143.856 --x 0 --y 0 --scale 1 \
+  --logical-monitor --monitor DP-2 --mode 1920x1080@60.000 --x 2560 --y 360 --scale 1
